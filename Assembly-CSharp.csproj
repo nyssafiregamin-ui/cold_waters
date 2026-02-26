@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA47517A-418E-47C3-A602-F6221FD2C629}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>D:\steam\steamapps\common\Cold Waters\ColdWaters_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\steam\steamapps\common\Cold Waters\ColdWaters_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\steam\steamapps\common\Cold Waters\ColdWaters_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\steam\steamapps\common\Cold Waters\ColdWaters_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\steam\steamapps\common\Cold Waters\ColdWaters_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acoustics.cs" />
+    <Compile Include="AerialDrop.cs" />
+    <Compile Include="Aircraft.cs" />
+    <Compile Include="AmplifyBloom\AmplifyBloomBase.cs" />
+    <Compile Include="AmplifyBloom\AmplifyBloomEffect.cs" />
+    <Compile Include="AmplifyBloom\AmplifyBokeh.cs" />
+    <Compile Include="AmplifyBloom\AmplifyBokehData.cs" />
+    <Compile Include="AmplifyBloom\AmplifyGlare.cs" />
+    <Compile Include="AmplifyBloom\AmplifyGlareCache.cs" />
+    <Compile Include="AmplifyBloom\AmplifyLensFlare.cs" />
+    <Compile Include="AmplifyBloom\AmplifyPassCache.cs" />
+    <Compile Include="AmplifyBloom\AmplifyStarlineCache.cs" />
+    <Compile Include="AmplifyBloom\AmplifyUtils.cs" />
+    <Compile Include="AmplifyBloom\ApertureShape.cs" />
+    <Compile Include="AmplifyBloom\BloomPasses.cs" />
+    <Compile Include="AmplifyBloom\DebugToScreenEnum.cs" />
+    <Compile Include="AmplifyBloom\DemoCameraMovement.cs" />
+    <Compile Include="AmplifyBloom\DemoFPSCounter.cs" />
+    <Compile Include="AmplifyBloom\DemoMainUI.cs" />
+    <Compile Include="AmplifyBloom\DemoUIElement.cs" />
+    <Compile Include="AmplifyBloom\DemoUIElementAction.cs" />
+    <Compile Include="AmplifyBloom\DemoUISlider.cs" />
+    <Compile Include="AmplifyBloom\DemoUIToggle.cs" />
+    <Compile Include="AmplifyBloom\GlareDefData.cs" />
+    <Compile Include="AmplifyBloom\GlareLibType.cs" />
+    <Compile Include="AmplifyBloom\IAmplifyItem.cs" />
+    <Compile Include="AmplifyBloom\LogType.cs" />
+    <Compile Include="AmplifyBloom\MainThresholdSizeEnum.cs" />
+    <Compile Include="AmplifyBloom\PrecisionModes.cs" />
+    <Compile Include="AmplifyBloom\StarDefData.cs" />
+    <Compile Include="AmplifyBloom\StarLibType.cs" />
+    <Compile Include="AmplifyBloom\StarLineData.cs" />
+    <Compile Include="AmplifyBloom\UpscaleQualityEnum.cs" />
+    <Compile Include="AmplifyBloom\VersionInfo.cs" />
+    <Compile Include="AmplifyColorBase.cs" />
+    <Compile Include="AmplifyColorEffect.cs" />
+    <Compile Include="AmplifyColorTriggerProxy.cs" />
+    <Compile Include="AmplifyColorTriggerProxy2D.cs" />
+    <Compile Include="AmplifyColorTriggerProxyBase.cs" />
+    <Compile Include="AmplifyColorVolume.cs" />
+    <Compile Include="AmplifyColorVolume2D.cs" />
+    <Compile Include="AmplifyColorVolumeBase.cs" />
+    <Compile Include="AmplifyColor\Quality.cs" />
+    <Compile Include="AmplifyColor\VersionInfo.cs" />
+    <Compile Include="AmplifyColor\VolumeEffect.cs" />
+    <Compile Include="AmplifyColor\VolumeEffectComponent.cs" />
+    <Compile Include="AmplifyColor\VolumeEffectComponentFlags.cs" />
+    <Compile Include="AmplifyColor\VolumeEffectContainer.cs" />
+    <Compile Include="AmplifyColor\VolumeEffectField.cs" />
+    <Compile Include="AmplifyColor\VolumeEffectFieldFlags.cs" />
+    <Compile Include="AmplifyColor\VolumeEffectFlags.cs" />
+    <Compile Include="AmplifyOcclusionBase.cs" />
+    <Compile Include="AmplifyOcclusionEffect.cs" />
+    <Compile Include="AmplifyOcclusion\VersionInfo.cs" />
+    <Compile Include="AnimatedProjector.cs" />
+    <Compile Include="AnimatedUVs.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="Blastzone.cs" />
+    <Compile Include="CalendarFunctions.cs" />
+    <Compile Include="CameraFacingBillboard.cs" />
+    <Compile Include="CampaignEvent.cs" />
+    <Compile Include="CampaignLocation.cs" />
+    <Compile Include="CampaignManager.cs" />
+    <Compile Include="CampaignMapRevealContact.cs" />
+    <Compile Include="CampaignMapWaypoint.cs" />
+    <Compile Include="CampaignMission.cs" />
+    <Compile Include="CampaignRecon.cs" />
+    <Compile Include="CampaignRegionWaypoint.cs" />
+    <Compile Include="CampaignTaskForce.cs" />
+    <Compile Include="Ceto\AddAutoShoreMask.cs" />
+    <Compile Include="Ceto\AddFoamThruster.cs" />
+    <Compile Include="Ceto\AddFoamTrail.cs" />
+    <Compile Include="Ceto\AddRenderTarget.cs" />
+    <Compile Include="Ceto\AddShoreMask.cs" />
+    <Compile Include="Ceto\AddWaveOverlay.cs" />
+    <Compile Include="Ceto\AddWaveOverlayBase.cs" />
+    <Compile Include="Ceto\Buoyancy.cs" />
+    <Compile Include="Ceto\BuoyantStructure.cs" />
+    <Compile Include="Ceto\CameraData.cs" />
+    <Compile Include="Ceto\Common\Containers\Interpolation\IInterpolatedArray2.cs" />
+    <Compile Include="Ceto\Common\Containers\Interpolation\InterpolatedArray.cs" />
+    <Compile Include="Ceto\Common\Containers\Interpolation\InterpolatedArray2f.cs" />
+    <Compile Include="Ceto\Common\Containers\Queues\DictionaryQueue.cs" />
+    <Compile Include="Ceto\Common\Containers\Queues\SetQueue.cs" />
+    <Compile Include="Ceto\Common\Threading\Scheduling\ICoroutine.cs" />
+    <Compile Include="Ceto\Common\Threading\Scheduling\IScheduler.cs" />
+    <Compile Include="Ceto\Common\Threading\Scheduling\Scheduler.cs" />
+    <Compile Include="Ceto\Common\Threading\Tasks\ICancelToken.cs" />
+    <Compile Include="Ceto\Common\Threading\Tasks\IThreadedTask.cs" />
+    <Compile Include="Ceto\Common\Threading\Tasks\TaskListener.cs" />
+    <Compile Include="Ceto\Common\Threading\Tasks\ThreadedTask.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\CBUtility.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\DisableFog.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\DisableGameObject.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\DisableShadows.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\ExtendedFind.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\FPSCounter.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\NotifyOnEvent.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\NotifyOnRenderObject.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\NotifyOnWillRender.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\Quit.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\RotateLight.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\RTSettings.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\RTUtility.cs" />
+    <Compile Include="Ceto\Common\Unity\Utility\Wireframe.cs" />
+    <Compile Include="Ceto\CustomWaveSpectrumCondition.cs" />
+    <Compile Include="Ceto\CustomWaveSpectrumExample.cs" />
+    <Compile Include="Ceto\DepthData.cs" />
+    <Compile Include="Ceto\DEPTH_MODE.cs" />
+    <Compile Include="Ceto\DisplacementBufferCPU.cs" />
+    <Compile Include="Ceto\DisplacementBufferGPU.cs" />
+    <Compile Include="Ceto\DisplayTexture.cs" />
+    <Compile Include="Ceto\FindRangeTask.cs" />
+    <Compile Include="Ceto\FoamOverlay.cs" />
+    <Compile Include="Ceto\FoamTexture.cs" />
+    <Compile Include="Ceto\FourierCPU.cs" />
+    <Compile Include="Ceto\FourierGPU.cs" />
+    <Compile Include="Ceto\FourierTask.cs" />
+    <Compile Include="Ceto\FOURIER_SIZE.cs" />
+    <Compile Include="Ceto\FreeCam.cs" />
+    <Compile Include="Ceto\GRID_GROUPS.cs" />
+    <Compile Include="Ceto\GUIDisplay.cs" />
+    <Compile Include="Ceto\ICustomWaveSpectrum.cs" />
+    <Compile Include="Ceto\IDisplacementBuffer.cs" />
+    <Compile Include="Ceto\IgnoreOceanEvents.cs" />
+    <Compile Include="Ceto\ImageBlur.cs" />
+    <Compile Include="Ceto\InitSpectrumDisplacementsTask.cs" />
+    <Compile Include="Ceto\IOceanTime.cs" />
+    <Compile Include="Ceto\IProjection.cs" />
+    <Compile Include="Ceto\IRefractionCommand.cs" />
+    <Compile Include="Ceto\ISpectrum.cs" />
+    <Compile Include="Ceto\MaskData.cs" />
+    <Compile Include="Ceto\MESH_RESOLUTION.cs" />
+    <Compile Include="Ceto\Ocean.cs" />
+    <Compile Include="Ceto\OceanCameraSettings.cs" />
+    <Compile Include="Ceto\OceanComponent.cs" />
+    <Compile Include="Ceto\OceanGridBase.cs" />
+    <Compile Include="Ceto\OceanTime.cs" />
+    <Compile Include="Ceto\OceanUtility.cs" />
+    <Compile Include="Ceto\OverlayClipTexture.cs" />
+    <Compile Include="Ceto\OverlayFoamTexture.cs" />
+    <Compile Include="Ceto\OverlayHeightTexture.cs" />
+    <Compile Include="Ceto\OverlayManager.cs" />
+    <Compile Include="Ceto\OverlayNormalTexture.cs" />
+    <Compile Include="Ceto\OVERLAY_MAP_SIZE.cs" />
+    <Compile Include="Ceto\OVERLAY_MASK_MODE.cs" />
+    <Compile Include="Ceto\OVERLAY_PASS.cs" />
+    <Compile Include="Ceto\PhillipsSpectrum.cs" />
+    <Compile Include="Ceto\PhillipsSpectrumCondition.cs" />
+    <Compile Include="Ceto\PhillipsSpectrumConditionKey.cs" />
+    <Compile Include="Ceto\PlanarReflection.cs" />
+    <Compile Include="Ceto\ProjectedGrid.cs" />
+    <Compile Include="Ceto\Projection3d.cs" />
+    <Compile Include="Ceto\Projection3f.cs" />
+    <Compile Include="Ceto\ProjectionData.cs" />
+    <Compile Include="Ceto\QueryableOverlayResult.cs" />
+    <Compile Include="Ceto\QueryDisplacements.cs" />
+    <Compile Include="Ceto\QueryGridScaling.cs" />
+    <Compile Include="Ceto\QUERY_MODE.cs" />
+    <Compile Include="Ceto\ReflectionBase.cs" />
+    <Compile Include="Ceto\ReflectionCameraCullingDistances.cs" />
+    <Compile Include="Ceto\ReflectionData.cs" />
+    <Compile Include="Ceto\REFLECTION_RESOLUTION.cs" />
+    <Compile Include="Ceto\RefractionCommand.cs" />
+    <Compile Include="Ceto\RefractionCommandBase.cs" />
+    <Compile Include="Ceto\REFRACTION_RESOLUTION.cs" />
+    <Compile Include="Ceto\ShipCamera.cs" />
+    <Compile Include="Ceto\ShoreMaskGenerator.cs" />
+    <Compile Include="Ceto\SpectrumTask.cs" />
+    <Compile Include="Ceto\SPECTRUM_DISTRIBUTION.cs" />
+    <Compile Include="Ceto\SPECTRUM_TYPE.cs" />
+    <Compile Include="Ceto\StickToSurface.cs" />
+    <Compile Include="Ceto\UnderWater.cs" />
+    <Compile Include="Ceto\UnderWaterBase.cs" />
+    <Compile Include="Ceto\UnderWaterPostEffect.cs" />
+    <Compile Include="Ceto\UNDERWATER_MODE.cs" />
+    <Compile Include="Ceto\UnifiedPhillipsSpectrumCondition.cs" />
+    <Compile Include="Ceto\UnifiedSpectrum.cs" />
+    <Compile Include="Ceto\UnifiedSpectrumCondition.cs" />
+    <Compile Include="Ceto\UnifiedSpectrumConditionKey.cs" />
+    <Compile Include="Ceto\WakeDisplacement.cs" />
+    <Compile Include="Ceto\WaveOverlay.cs" />
+    <Compile Include="Ceto\WaveOverlayData.cs" />
+    <Compile Include="Ceto\WaveQuery.cs" />
+    <Compile Include="Ceto\WaveQueryTask.cs" />
+    <Compile Include="Ceto\WaveSpectrum.cs" />
+    <Compile Include="Ceto\WaveSpectrumBase.cs" />
+    <Compile Include="Ceto\WaveSpectrumBuffer.cs" />
+    <Compile Include="Ceto\WaveSpectrumBufferCPU.cs" />
+    <Compile Include="Ceto\WaveSpectrumBufferGPU.cs" />
+    <Compile Include="Ceto\WaveSpectrumCondition.cs" />
+    <Compile Include="Ceto\WaveSpectrumConditionKey.cs" />
+    <Compile Include="Clock.cs" />
+    <Compile Include="ColorBlend.cs" />
+    <Compile Include="CombatAI.cs" />
+    <Compile Include="Compartment.cs" />
+    <Compile Include="ConditionsDisplay.cs" />
+    <Compile Include="Controls.cs" />
+    <Compile Include="CoroutineWithData.cs" />
+    <Compile Include="CreditScroll.cs" />
+    <Compile Include="DamageControl.cs" />
+    <Compile Include="DamageSystem.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseAircraftData.cs" />
+    <Compile Include="DatabaseCountermeasureData.cs" />
+    <Compile Include="DatabaseDepthChargeData.cs" />
+    <Compile Include="DatabaseRADARData.cs" />
+    <Compile Include="DatabaseShipData.cs" />
+    <Compile Include="DatabaseSonarData.cs" />
+    <Compile Include="DatabaseSubsystemsData.cs" />
+    <Compile Include="DatabaseWeaponData.cs" />
+    <Compile Include="DEMGenerator.cs" />
+    <Compile Include="DestroyonHUDoff.cs" />
+    <Compile Include="DestroyTimer.cs" />
+    <Compile Include="Draggable.cs" />
+    <Compile Include="DragTransform.cs" />
+    <Compile Include="EditorMission.cs" />
+    <Compile Include="EditorMissionVesselGroup.cs" />
+    <Compile Include="EditorVesselBar.cs" />
+    <Compile Include="EndlessTerrain.cs" />
+    <Compile Include="Enemy_AntiMissileGuns.cs" />
+    <Compile Include="Enemy_Guns.cs" />
+    <Compile Include="Enemy_Missile.cs" />
+    <Compile Include="Enemy_Noisemaker.cs" />
+    <Compile Include="Enemy_RBU.cs" />
+    <Compile Include="Enemy_Torpedo.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="EventCamera.cs" />
+    <Compile Include="EventManager.cs" />
+    <Compile Include="EventTemplate.cs" />
+    <Compile Include="FadeOverTime.cs" />
+    <Compile Include="FalloffGenerator.cs" />
+    <Compile Include="FollowCameraTargetTransform.cs" />
+    <Compile Include="FollowObject.cs" />
+    <Compile Include="FPS_Counter.cs" />
+    <Compile Include="GameDataManager.cs" />
+    <Compile Include="GlowMeshHide.cs" />
+    <Compile Include="Helicopter.cs" />
+    <Compile Include="HelmManager.cs" />
+    <Compile Include="HelpManager.cs" />
+    <Compile Include="HorizontalBillboard.cs" />
+    <Compile Include="IceSpawnCheck.cs" />
+    <Compile Include="InGameReference.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="KeybindDialogBox.cs" />
+    <Compile Include="KeybindManager.cs" />
+    <Compile Include="KeybindManagerMenu.cs" />
+    <Compile Include="KeybindManagerMuseum.cs" />
+    <Compile Include="LanguageManager.cs" />
+    <Compile Include="LevelLoadData.cs" />
+    <Compile Include="LevelLoadManager.cs" />
+    <Compile Include="LOD.cs" />
+    <Compile Include="ManualCameraZoom.cs" />
+    <Compile Include="MapContact.cs" />
+    <Compile Include="MapData.cs" />
+    <Compile Include="MapDragCancel.cs" />
+    <Compile Include="MapGenerator.cs" />
+    <Compile Include="MasterSwitch.cs" />
+    <Compile Include="Mastervolume.cs" />
+    <Compile Include="MeshData.cs" />
+    <Compile Include="MeshGenerator.cs" />
+    <Compile Include="MissionManager.cs" />
+    <Compile Include="MouseLook.cs" />
+    <Compile Include="mset\Corner.cs" />
+    <Compile Include="mset\Logo.cs" />
+    <Compile Include="mset\SHEncoding.cs" />
+    <Compile Include="mset\Sky.cs" />
+    <Compile Include="Noise.cs" />
+    <Compile Include="Noisemaker.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="ObjectPoolManager.cs" />
+    <Compile Include="OceanTiling.cs" />
+    <Compile Include="OptionsManager.cs" />
+    <Compile Include="ParticleField.cs" />
+    <Compile Include="Path_AStar.cs" />
+    <Compile Include="Path_TileGraph.cs" />
+    <Compile Include="PlayerCampaignData.cs" />
+    <Compile Include="PlayerFunctions.cs" />
+    <Compile Include="PointLight.cs" />
+    <Compile Include="PortRearm.cs" />
+    <Compile Include="PortRepair.cs" />
+    <Compile Include="PositionExporter.cs" />
+    <Compile Include="PreviewLabs\PlayerPrefs.cs" />
+    <Compile Include="Priority_Queue\FastPriorityQueue.cs" />
+    <Compile Include="Priority_Queue\FastPriorityQueueNode.cs" />
+    <Compile Include="Priority_Queue\IPriorityQueue.cs" />
+    <Compile Include="Priority_Queue\SimplePriorityQueue.cs" />
+    <Compile Include="Projectile_Collider.cs" />
+    <Compile Include="Projectile_DepthCharge.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radar.cs" />
+    <Compile Include="RandomTable.cs" />
+    <Compile Include="ReflectionCameraFog.cs" />
+    <Compile Include="RotateTorpedoProp.cs" />
+    <Compile Include="SaveDataCampaign.cs" />
+    <Compile Include="SaveLoadManager.cs" />
+    <Compile Include="SensorData.cs" />
+    <Compile Include="SensorManager.cs" />
+    <Compile Include="SetParticleWhiteLevel.cs" />
+    <Compile Include="SimpleLOD.cs" />
+    <Compile Include="Sky.cs" />
+    <Compile Include="SkyObjectCenterer.cs" />
+    <Compile Include="SliderDisplay.cs" />
+    <Compile Include="SonarContact.cs" />
+    <Compile Include="Sonobuoy.cs" />
+    <Compile Include="SortArray.cs" />
+    <Compile Include="SpriteComplex.cs" />
+    <Compile Include="SpriteComplex2.cs" />
+    <Compile Include="SpriteSupport.cs" />
+    <Compile Include="SpriteVerticle.cs" />
+    <Compile Include="StatusScreens.cs" />
+    <Compile Include="SubmarineFunctions.cs" />
+    <Compile Include="SubmarineMarker.cs" />
+    <Compile Include="TacticalMap.cs" />
+    <Compile Include="TerrainType.cs" />
+    <Compile Include="TextParser.cs" />
+    <Compile Include="TextureGenerator.cs" />
+    <Compile Include="TextureScale.cs" />
+    <Compile Include="tfQuad.cs" />
+    <Compile Include="Torpedo.cs" />
+    <Compile Include="TorpedoTubeGUI.cs" />
+    <Compile Include="TurboForest.cs" />
+    <Compile Include="TutorialPanel.cs" />
+    <Compile Include="UIFunctions.cs" />
+    <Compile Include="Vessel.cs" />
+    <Compile Include="VesselAI.cs" />
+    <Compile Include="VesselAINav.cs" />
+    <Compile Include="VesselBuilder.cs" />
+    <Compile Include="VesselMovement.cs" />
+    <Compile Include="VoiceManager.cs" />
+    <Compile Include="WakeManager.cs" />
+    <Compile Include="WaveMotion.cs" />
+    <Compile Include="WeaponSource.cs" />
+    <Compile Include="Whale_AI.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
